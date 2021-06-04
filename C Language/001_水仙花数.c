@@ -1,9 +1,14 @@
+/*
+ *  2021年5月15日星期六 下午7:40
+ *  目的：
+ *      获取100~1000内的水仙花数
+ *
+ */
+
 #include <math.h>
 #include <stdio.h>
 
-int main(void)
-
-{
+int main(void) {
     int i, j, k, n;
     for (n = 100; n < 1000; ++n)
 
@@ -12,9 +17,17 @@ int main(void)
         j = n / 10 % 10;
         k = n / 100.0;
         if (n == pow(i, 3) + pow(j, 3) + pow(k, 3))
-            printf("%5d", n);
+            printf("%d\n", n);
     }
-    putchar('\n');
 
     return 0;
 }
+
+/*  在Archlinux's vim下的输出结果是：
+ *  -----------------------------------------
+ *  153
+ *  370
+ *  371
+ *  407
+ *  ----------------------------------------
+ */
