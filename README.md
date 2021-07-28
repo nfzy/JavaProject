@@ -1,1 +1,4 @@
-# Code of c language
+# My code exercise.
+# I can do it.
+# Come on, man.
+
