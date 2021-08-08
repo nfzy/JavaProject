@@ -1,11 +1,11 @@
 #include <stdio.h>
 
+/* Got It */
 int main(void)
 {
-    int age = 12;
-    int height = 180;
-    printf("I am %d years old.\n" , age);
-    printf("I am %d centermeter tall.\n" , height);
+    // This is commit
+    int distance = 100;
+    printf("This way is %d long.\n", distance);
 
     return 0;
 }
