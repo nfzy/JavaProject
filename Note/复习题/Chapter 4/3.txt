@@ -1,0 +1,2 @@
+#define Q "\"His Hamlet was funny without being vulgar.\""
+    printf("\"%s\"\nhas %d characters.\n", Q, strlen(Q));
