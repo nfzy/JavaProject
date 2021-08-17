@@ -9,8 +9,9 @@ int main(void)
     scanf("%f", &fGallon);
     printf("每加仑汽油行驶的英里数: %.2f\n", fMileAge/fGallon);
 
-    #define USA 1.609/3.758
-    printf("%.1f\n",fGallon*3.758/(1.609*fMileAge)/100);
-    printf("%.1f\n",USA*fMileAge/fGallon);
+    #define GALLON 3.785
+    #define MILE 1.609
+    printf("%.1f\n", GALLON/1.609*100);
+
     return 0;
 }
