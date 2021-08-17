@@ -1,8 +1,8 @@
 #include <stdio.h>
-#define _ {
+#define a {
 #define b }
 int main(void)
-_
+a
     /*
     #include <string.h>
     #define Q "His Hamlet was funny without being vulgar."
@@ -28,23 +28,29 @@ _
     printf("|%6.4i|, |%*o|, |%2c|, |%+.2f|, |%-7.5s|", 6, 4, 30, 97, 2., "womenzaizheli1213");
     putchar('\n');
 
+    /*
     int i;
     float f, E;
     char *str;
     scanf("%d", &i);
     printf("%d\n", i);
-
-    scanf("%5f%E", &f, &E);
-    printf("%f, %E\n", f, E);
-
+    scanf("%f%E", &f, &E);
+    printf("%.2f, %.2E\n", f, E);
     scanf("%s", str);
     printf("%s\n", str);
-
     scanf("%s %d", str, &i);
     printf("%s %d\n", str, i);
-
     scanf("%*s %d", &i);
     printf("%s %d\n",str ,i);
+    */
+
+    #define  A 4.5
+    short c = 5;
+    printf("The double type is %zu bytes..\n", sizeof c);
+    printf("The double type is %zu bytes..\n", sizeof 0.3f);
+    printf("The double type is %zu bytes..\n", sizeof 0.f);
+    printf("The double type is %zd bytes..\n", sizeof A);
+    //printf("The double type is %zf bytes..\n", sizeof A);
 
     return 0;
-b
+}

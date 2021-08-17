@@ -3,11 +3,12 @@
 
 int main(void)
 {
-
-    printf("\"Zhou" " An\"" "\n");
-    printf("|\"%20s\"|""\n", "Zhou An");
-    printf("|\"%-20s\"|""\n", "Zhou An");
-    printf("|\"%*s\"|""\n", (int)strlen("Zhou An")*3, "Zhou An");
-
+    printf("Enter your name: ");
+    char name[40];
+    scanf("%s", name);
+    printf("\"%s\"\n", name);
+    printf("\"%20s\"\n", name);
+    printf("\"%-20s\"\n", name);
+    printf("\"%-*s\"\n", (int)strlen(name)+3, name);
     return 0;
 }
