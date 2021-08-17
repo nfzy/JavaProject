@@ -8,7 +8,7 @@ main(int)           // int main(void)
     printf("Please enter your first name.");
     scanf("%s", name);
     printf("All right, %c, what's your age?\n'", name); // %s
-    scanf("%f", age);   // &age;
+    scanf("%f", age);   // %d;
     xp = age + x;       // int xp;
     printf("That 's a %s! You must be at least %d.\n", B, xp);
 
