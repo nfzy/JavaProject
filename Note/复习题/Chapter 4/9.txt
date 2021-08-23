@@ -1,5 +1,0 @@
-a. scanf("%d");
-b. scanf("%f %E");
-c. scanf("%s");
-d. scanf("%s %d");
-e. scanf("%*s %d");
