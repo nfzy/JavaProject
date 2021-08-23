@@ -8,10 +8,8 @@ int main(void)
     scanf("%d", &iNumb);
     iCount = iNumb + BIG;
     while (iNumb < iCount + 1)
-    {
         printf("%-5d", iNumb++);
-    }
-    putchar('\n');
+    puts("\nDone!");
 
     return 0;
 }

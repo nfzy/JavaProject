@@ -56,15 +56,12 @@ a
 */
 
 
-
-
-
+/*
 #include <stdio.h>
 #define S_TO_M 60
 #define TEN 103
 int main(void)
 {
-    /*
     char c1, c2;
     int diff;
     float num;
@@ -73,9 +70,7 @@ int main(void)
     diff = c1 - c2;	// diff = 83 - 79
     num = diff;		// num = 4
     printf("%c%c%c:%d %3.2f\n", c1, c2, c1, diff, num);	// SOS:4 4.00
-    */
-
-    /*
+    
     int n = 96;
     while (n++ < TEN)
         printf("%5c", n);
@@ -97,10 +92,8 @@ int main(void)
         ch++;
     }
     printf("%c\n",ch);
-    */
 
 
-    /*
     #define MESG "COMPUTER BYTES DOG"
     int n = 0;
     // 无结束条件会一直打印MESG字符串
@@ -108,10 +101,8 @@ int main(void)
         printf("%s\n", MESG);
     n++;
     printf("That's all.\n");
-    */
 
 
-    /*
     int a, b, c, d, x = 0;
     while(x < 10) x++;	// 将变量x的值增加10
     a = x;
@@ -120,7 +111,6 @@ int main(void)
     c = (a + b) * 2;	// 将a与b之和的两倍赋给c
     d = a + b * 2;		// 将a与b的两倍之和赋给c
     printf("a = %d, b = %d, c = %d, d = %d\n", a, b, c, d);
-    */
 
     int Temperatures(double fahrenheit);
     double input;
@@ -144,6 +134,284 @@ int Temperatures(double fahrenheit)
     celsius=5.0/9.0*(fahrenheit-F_TO_C);
     kelvin=celsius+C_TO_K;
     printf("%.2f.fahrenheit,equal %.2f celsius,and %.2f kelvin\n",fahrenheit,celsius,kelvin);
+
+    return 0;
+}
+*/
+
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    int i_num, i_hour, i_min;
+    const int MIN = 60;
+    printf("Enter any number: ");
+    scanf("%d", &i_num);
+    while(i_num > 0)
+    {
+        i_hour = i_num / MIN;
+        i_min = i_num - i_hour * MIN;
+        printf("It's %d hour, %d minute.\n", i_hour, i_min);
+        printf("Enter any number again: ");
+        scanf("%d", &i_num);
+    }
+    puts("Done!");
+
+    return 0;
+}
+*/
+
+/*
+#include "stdio.h"
+#define TEN 10
+
+int main(void)
+{
+    int i_num, i_count;
+    printf("Enter a number: ");
+    scanf("%d", &i_num);
+    i_count = TEN + i_num;
+    while(i_num <= i_count)
+        printf("%-3d", i_num++);
+    puts("\nDone!");
+
+    return 0;
+}
+*/
+
+
+
+/*
+#include <stdio.h>
+#define WEEK 7
+
+int main(void)
+{
+    int i_date, i_weeks, i_days;
+    printf("Enter days: ");
+    scanf("%d", &i_date);
+    while(i_date > 0)
+    {
+        i_weeks = i_date / WEEK;
+        i_days = i_date % WEEK;
+        printf("%d days are %d weeks, %d days.%c", i_date, i_weeks, i_days, '\n');
+        printf("Enter days: ");
+        scanf("%d", &i_date);
+    }
+    puts("Done!");
+
+    return 0;
+}
+*/
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+
+    for (double value = 36.0; value > 0.0; value /= 2.0)
+        printf("%8.3f", value);
+
+    return 0;
+}
+*/
+
+
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    int i, j, list[10];
+    for(i = 0; i < 10; i++)
+    {
+        list[i] = 2 * i + 3;
+        for(j = 0; j <= i; j++)
+            printf(" %d", list[j]);
+        printf("\n");
+    }
+
+    return 0;
+}*/
+
+
+
+/*
+#include "stdio.h"
+#define FOUR 4
+#define EIGHT 8
+
+int main(void)
+{
+    int i, j;
+    for(i = 0; i < FOUR; ++i)
+    {
+        for(j = 0; j < EIGHT; ++j)
+            printf("$");
+        putchar('\n');
+    }
+    puts("Done!");
+
+    return 0;
+}
+*/
+
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int i = 0;
+	while (++i < 4)
+		printf("Hi! ");
+	do
+        printf("Bye! ");
+	while (i++ < 8);
+
+    return 0;
+}
+*/
+
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int i;
+	char ch;
+	for (i = 0, ch = 'A'; i < 4; i++, ch += 2 * i)
+		printf("%c", ch);
+
+    return 0;
+}
+*/
+
+//#include <stdio.h>
+
+//int main(void)
+//{
+ //   char ch;
+    /*
+    scanf("%c", &ch);
+    while (ch != 'g')
+    {
+        printf("%c", ch);
+        scanf("%c", &ch);
+    }
+    */
+
+    /*
+    scanf("%c", &ch);
+    while (ch != 'g')
+    {
+        printf("%c", ++ch);
+        scanf("%c", &ch);
+    }
+    */
+
+    /*
+    do {
+        scanf("%c", &ch);printf("%c", ch);
+    }while (ch != 'g');
+    */
+
+    /*
+    scanf("%c", &ch);
+    for (ch = '!'; ch != 'g'; scanf("%c", &ch))
+        printf("%c", ch);
+        */
+
+    //  return 0;
+//}
+
+
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int n, m;
+	n = 30;
+	while (++n <= 33)
+		printf("%d|", n);
+
+    n = 30;
+	do
+		printf("%d|", n);
+	while (++n <= 33);
+
+    printf("\n***\n");
+	for (n = 1; n*n < 200; n += 4)
+		printf("%d\n", n);
+	printf("\n***\n");
+
+    for (n = 2, m = 6; n < m; n *= 2, m += 2)
+		printf("%d %d\n", n, m);
+	printf("\n***\n");
+
+    for (n = 5; n > 0; n--)
+	{
+		for (m = 0; m <= n; m++)
+			printf("=");
+		printf("\n");
+	}
+
+   return 0;
+}
+*/
+
+
+/*
+#include <stdio.h>
+#define SIZE 8
+
+int main(void)
+{
+	int by_twos[SIZE];
+	int index;
+
+    for (index = 0; index < SIZE; index++)	// index = 0; index < SIZE
+		by_twos[index] = 2 * index;
+
+    for (index = 0; index < SIZE; index++)	// index = 0; index < SIZE
+		printf("%d ", by_twos[index]);				// by_twos[index]
+	printf("\n");
+
+    return 0;
+}
+*/
+
+
+#include <stdio.h>
+
+int main(void)
+{
+	int k;
+	for (k = 1, printf("%d: Hi!\n", k); printf("k = %d\n", k), k * k < 26; k += 2, printf("Now k is %d\n", k))
+		printf("k is %d in the loop\n", k);
+
+    /*
+     *	1: Hi
+     *	k = 1
+     *	k is 1 in the loop
+     *	Now k is 3
+     *	k = 3
+     *	k is 3 in the loop
+     *	Now k is 5
+     *	k = 5
+     *	k is 5 in the loop
+     *	Now k is 7
+     *	k = 7
+     *	k is 7 in the loop
+     *
+     * */
 
     return 0;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void temp(double);
+void Temperatures(double);
 
 int main(void)
 {
@@ -8,7 +8,7 @@ int main(void)
     printf("输入华氏温度：");
     while (scanf("%lf", &d_tem_hs) == 1)
     {
-        temp(d_tem_hs);
+        Temperatures(d_tem_hs);
         printf("输入华氏温度：");
     }
     puts("Done");
@@ -16,7 +16,7 @@ int main(void)
     return 0;
 }
 
-void temp(double d)
+void Temperatures(double d)
 {
     double d_tem_ss, d_tem_ks;
     const double d_num1 = 5.0/9.0;

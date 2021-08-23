@@ -1,20 +1,29 @@
+/*
+ *	1 feet = 12 inch
+ *	1 inch ≈ 2.54 cm
+ *	1 feet ≈ 2.54 * 12 = 30.48 cm
+ *
+ * */
+
 #include <stdio.h>
+#define FEET 12
+#define INCH 2.54
 
 int main(void)
 {
-    float f_height, f_height_inches;
-    int f_feet;
+    int i_feet;
+    float f_cm, f_inch;
     printf("Enter a height in centimeters: ");
-    scanf("%f", &f_height);
-    while(f_height>0)
+    scanf("%f", &f_cm);
+    while(f_cm > 0)
     {
-        f_feet = f_height / 30.48f;
-        f_height_inches = f_height / 2.54f - f_feet * 12;
-        printf("%.1f cm= %d feet, %.1f inches\n", f_height, f_feet, f_height_inches);
+        i_feet = f_cm / INCH / FEET;
+        f_inch = f_cm / INCH - i_feet * FEET;
+        printf("%.1f cm = %d feet, %.1f inches\n", f_cm, i_feet, f_inch);
         printf("Enter a height in centimeters (<=0 to quit): ");
-        scanf("%f", &f_height);
+        scanf("%f", &f_cm);
     }
-    printf("Bye\n");
-
+    puts("Done!");
+    
     return 0;
 }
