@@ -11,6 +11,7 @@
 
 void two(void);
 void one_three(void);
+
 int main(void)
 {
     printf("Starting now:\n");
@@ -22,7 +23,7 @@ int main(void)
 void one_three(void)
 {
     printf("One\n");
-    two();  // 注意不能在函数里嵌套定义函数，只能嵌套调用：void two();
+    void two();  // 注意不能在函数里嵌套定义函数，只能嵌套调用：void two();
     printf("Three\n");
 }
 

@@ -389,29 +389,57 @@ int main(void)
 */
 
 
+/*
 #include <stdio.h>
 
 int main(void)
 {
-	int k;
-	for (k = 1, printf("%d: Hi!\n", k); printf("k = %d\n", k), k * k < 26; k += 2, printf("Now k is %d\n", k))
-		printf("k is %d in the loop\n", k);
+    int k;
+    for (k = 1, printf("%d: Hi!\n", k); printf("k = %d\n", k), k * k < 26; k += 2, printf("Now k is %d\n", k))
+    printf("k is %d in the loop\n", k);
 
-    /*
-     *	1: Hi
-     *	k = 1
-     *	k is 1 in the loop
-     *	Now k is 3
-     *	k = 3
-     *	k is 3 in the loop
-     *	Now k is 5
-     *	k = 5
-     *	k is 5 in the loop
-     *	Now k is 7
-     *	k = 7
-     *	k is 7 in the loop
-     *
-     * */
+    return 0;
+}
+*/
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    int a, b;
+    a = 5;
+    b = 2;        // 2 5
+    b = a;        // 5 5
+    a = b;        // 5 5
+
+    printf("%d %d\n", b, a);
+
+    return 0;
+}
+*/
+
+/*
+#include "stdio.h"
+
+int main(void)
+{
+    printf("%lu, %lu, %lu\n", sizeof 0x5.b6p12, sizeof 5.6, sizeof 0.0f);
+
+    return 0;
+}
+*/
+
+
+#include <stdio.h>
+
+int main(void)
+{
+    char ch = 'C';
+    printf("转义序列：%c.\n", ch);
+    printf("十进制值：%d.\n", ch);
+    printf("八进制值：%o.\n", ch);
+    printf("十六进制值：%#x.\n", ch);
 
     return 0;
 }

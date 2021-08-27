@@ -2,10 +2,10 @@
 
 int main(void)
 {
-    int i, j;
-    for (i = 0; i < 5; ++i)
+    int i_num, j_num;
+    for (i_num = 0; i_num < 5; ++i_num)
     {
-        for (j = 0; j <= i; ++j)
+        for (j_num = 0; j_num <= i_num; ++j_num)
             printf("$");
         putchar('\n');
     }

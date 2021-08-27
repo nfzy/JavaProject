@@ -7,6 +7,7 @@
  *
  * */
 #include <stdio.h>
+#define INCH 2.54
 
 int main(void)
 {
@@ -14,7 +15,8 @@ int main(void)
     printf("Enter a number of inch: ");
     printf("        \b\b\b\b\b\b\b\b");
     scanf("%lf", &inch);
-    printf("The inch convert centermeter is: %.2lf\n", inch*2.54);
+    printf("The inch convert centermeter is: %.2lf\n", inch * INCH);
+
     return 0;
 }
 

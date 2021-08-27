@@ -14,7 +14,7 @@ void ic();
 int main(void)
 {
     br();
-    putchar(',');
+    printf("%c ", ',');
     ic();
     putchar('\n');
     ic();

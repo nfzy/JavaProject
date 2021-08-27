@@ -13,7 +13,7 @@ int main(void)
 {
     short int age;
     printf("Ente You age number: ");
-    printf("   \b\b\b");
+    printf("___\b\b\b");
     scanf("%hd", &age);
     if(age <= 0)
         printf("You are a theif.");

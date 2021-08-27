@@ -2,12 +2,17 @@
 
 int main(void)
 {
-    char latin[26], ch;
-    for(ch = 0; ch < 26; ++ch)
-        latin[ch] = ch + 97;
-    for (ch = 0; ch < 26; ++ch)
-        printf("%c", latin[ch]);
+    const int i_NUM = 26;
+    int i_count;
+    char ch[i_NUM];
+    for (i_count = 0; i_count < i_NUM; ++i_count) {
+        ch[i_count] = 'a' + i_count;
+    }
 
-    puts("\nDone!");
+    for (i_count = 0; i_count < i_NUM; ++i_count) {
+        printf("%c", ch[i_count]);
+    }
+    putchar('\n');
+
     return 0;
 }
