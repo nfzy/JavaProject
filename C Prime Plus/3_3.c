@@ -9,7 +9,7 @@
 int main(void)
 {
 
-    putchar(48);
+    putchar('\a');
     printf("Startled by the sudden sound, Sally shouted,\n");
     printf("\"By the Great Pumpkin, what was that!\"\n");
 

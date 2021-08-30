@@ -430,6 +430,7 @@ int main(void)
 }
 */
 
+/*
 
 #include <stdio.h>
 
@@ -440,6 +441,70 @@ int main(void)
     printf("十进制值：%d.\n", ch);
     printf("八进制值：%o.\n", ch);
     printf("十六进制值：%#x.\n", ch);
+
+    return 0;
+}
+*/
+
+/*
+#include "stdio.h"
+#define BOOK "War and Peace"
+
+int main(void)
+{
+	float cost =12.99;
+	float percent = 80.0;
+
+    printf("This copy of \"%s\" sells for $%.2f.\n", BOOK, cost);
+    printf("That is %.f%% of list.\n", percent);
+
+    return 0;
+}
+*/
+
+/*
+#include <stdio.h>
+#define a_x {
+#define b_x }
+int main(void)
+{
+    char catch[40];
+    int a;
+    scanf("%*s%d", &a);
+    printf("%s, %d\n", catch, a);
+
+    return 0;
+}
+*/
+
+/*
+#include <stdio.h>
+#include "string.h"
+
+int main(void)
+{
+    char first_name[20];
+    char last_name[20];
+    printf("Enter your first name: ");
+    scanf("%s", first_name);
+    printf("Enter your last name: ");
+    scanf("%s", last_name);
+    printf("Your name is %s, %s\n", first_name, last_name);
+    printf("%*s", (int)strlen(first_name), first_name);
+
+    return 0;
+}*/
+
+
+
+#include <stdio.h>
+
+int main(void)
+{
+    float f_num;
+    printf("Enter a float number:         \b\b\b\b\b\b\b\b");
+    scanf("%f", &f_num);
+    printf("%f, %a\n", f_num, f_num);
 
     return 0;
 }

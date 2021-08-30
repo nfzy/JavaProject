@@ -9,7 +9,7 @@
 int main(void)
 {
     double f_num;
-    printf("Enter a float value: _________\b\b\b\b\b\b\b\b\b");
+    printf("Enter a float value:          \b\b\b\b\b\b\b\b\b");
     scanf("%lf", &f_num);
     printf("fixed-point notation: %lf\n", f_num);
     printf("exponential notation: %e\n" , f_num);

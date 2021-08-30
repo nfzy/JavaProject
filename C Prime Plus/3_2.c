@@ -9,9 +9,10 @@
 
 int main(void)
 {
-    printf("Enter a character: ");
-    putchar(getchar());
-    putchar('\n');
+    int i_ascii;
+    printf("Enter a ascii number: ");
+    scanf("%d", &i_ascii);
+    printf("The ascii %d is %c.\n", i_ascii, i_ascii);
 
     return 0;
 }
@@ -19,7 +20,7 @@ int main(void)
 /*
  *在 gcc (GCC) 11.1.0下的结果为:
  *------------------------------------------------------
- *    Enter a character: a
+ *    Enter a iaracter: a
  *    a
  *------------------------------------------------------
  *
