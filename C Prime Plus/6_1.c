@@ -7,19 +7,19 @@
 
 #include <stdio.h>
 
-int main(void)
-{
-    const int I_NUM = 26;
-    int i_count;
-    char ch[I_NUM];
-    for (i_count = 0; i_count < I_NUM; ++i_count) {
-        ch[i_count] = 'a' + i_count;
-    }
+#define LETTER 26
 
-    for (i_count = 0; i_count < I_NUM; ++i_count) {
-        printf("%c", ch[i_count]);
-    }
-    putchar('\n');
+int main(void)
+{	
+	char chars[LETTER];
+	int i_count;
+	for(i_count = 0; i_count < LETTER; ++i_count)
+		chars[i_count] = 'a' + i_count;
+
+	for(i_count = 0; i_count < LETTER; ++i_count)
+		printf("%c|", *(chars + i_count));
+
+	putchar('\n');
 
     return 0;
 }
@@ -27,8 +27,9 @@ int main(void)
 
 /*
  *
- *
- *
+ *	gcc (Debian 10.2.1-6) 10.2.1 20210110
+ *	
+ *	a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|
  *
  *
  * */

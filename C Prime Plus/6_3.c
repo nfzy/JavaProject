@@ -1,28 +1,62 @@
+/*
+ *	
+ *	日期:	Sun 23 Jan 2022 07:11:33 AM EST
+ *	
+ *	目的:	使用嵌套循环，按下面的格式打印字母： 
+ *				F
+ *				FE
+ *				FED 
+ *				FEDC
+ *				FEDCB
+ *				FEDCBA
+ *
+ *
+ * */
+
 #include <stdio.h>
 
-void array();
 int main(void)
 {
-    int i_num, j_num;
-    for (i_num = 0; i_num < 6; ++i_num)
-    {
-        for (j_num = 0; j_num <= i_num; ++j_num)
-            printf("%c", 'F' - j_num);
-        putchar('\n');
-    }
-    array();
+	for(int i = 0; i < 'Z' - 'A' + 1; ++i)
+	{
+		for(int j = 0; j <= i; ++j)
+			printf("%c", 'Z' - j);
+
+		putchar('\n');
+	}
 
     return 0;
 }
 
 
-void array()
-{
-    char ch[] = "ABCDEF";
-    for (int i = 6; i > 0; --i)
-    {
-        for (int j = 5; j >= i - 1; --j)
-            printf("%c", ch[j]);
-        putchar('\n');
-    }
-}
+/*
+ *	gcc (Debian 10.2.1-6) 10.2.1 20210110
+ *	
+ *	Z
+ *	ZY
+ *	ZYX
+ *	ZYXW
+ *	ZYXWV
+ *	ZYXWVU
+ *	ZYXWVUT
+ *	ZYXWVUTS
+ *	ZYXWVUTSR
+ *	ZYXWVUTSRQ
+ *	ZYXWVUTSRQP
+ *	ZYXWVUTSRQPO
+ *	ZYXWVUTSRQPON
+ *	ZYXWVUTSRQPONM
+ *	ZYXWVUTSRQPONML
+ *	ZYXWVUTSRQPONMLK
+ *	ZYXWVUTSRQPONMLKJ
+ *	ZYXWVUTSRQPONMLKJI
+ *	ZYXWVUTSRQPONMLKJIH
+ *	ZYXWVUTSRQPONMLKJIHG
+ *	ZYXWVUTSRQPONMLKJIHGF
+ *	ZYXWVUTSRQPONMLKJIHGFE
+ *	ZYXWVUTSRQPONMLKJIHGFED
+ *	ZYXWVUTSRQPONMLKJIHGFEDC
+ *	ZYXWVUTSRQPONMLKJIHGFEDCB
+ *	ZYXWVUTSRQPONMLKJIHGFEDCBA
+ *
+ * */

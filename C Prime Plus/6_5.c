@@ -1,35 +1,33 @@
+/*
+ *	日期:	Sun 23 Jan 2022 08:03:39 AM EST
+ *
+ *	目的:	编写一个程序，提示用户输入大写字母。使用嵌套循环以下面金字塔型的格式打印字母： 
+ *			    A
+ *			   ABA
+ *			  ABCBA
+ *			 ABCDCBA 
+ *			ABCDEDCBA
+ *
+ * */
+
 #include <stdio.h>
 
 int main(void)
 {
-    int i,j;
-    char n;
-    char letter[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    printf("请输入一个大写字母：");
-    scanf("%c",&n);
-    /*
-    for(i=0; i <= n - 'A'; i++)
-    {
-        for(j = 0; j < n -'A' - i; j++)
-            printf(" ");
-        for(j = 0; j <= i; j++)
-            printf("%c",j + 'A');
-        for(j = i - 1; j >= 0; j--)
-            printf("%c", j + 'A');
-        printf("\n");
-    }
-    */
-    for(i = 0; i < n - 'A' + 1; i++)
-    {
-        for(j = 0; j < n - 'A' - i; j++)
-            printf(" ");
-        for(j=0;j<=i;j++)
-            printf("%c",letter[j]);
-        for(j = i - 1; j >= 0; j--)
-             printf("%c", letter[j]);
-        printf("\n");
-    }
+	char ch, i, j;
+	printf("请输入金字塔高度字符:");
+	scanf("%c", &ch);
+	for(i = 65; i <= ch; i++)
+	{
+		for(j = 0; j <= ch - i; j++)
+			printf(" ");
+		for(j = 65; j <= i; j++)
+			printf("%c", j);
+		for(j = i - 1; j >= 65; j--)
+			printf("%c", j);
+		printf("\n");
+	}
 
     return 0;
 }

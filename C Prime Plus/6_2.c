@@ -1,14 +1,26 @@
+/*
+ *	日期:	Sun 23 Jan 2022 06:58:59 AM EST
+ *
+ *	目的:	使用嵌套循环，按下面的格式打印字符
+ *				$
+ *				$$
+ *				$$$ 
+ *				$$$$ 
+ *				$$$$$
+ *
+ * */
+
 #include <stdio.h>
 
 int main(void)
 {
-    int i_num, j_num;
-    for (i_num = 0; i_num < 5; ++i_num)
-    {
-        for (j_num = 0; j_num <= i_num; ++j_num)
-            printf("$");
-        putchar('\n');
-    }
+    for(int i = 0; i < 5; ++i)
+	{
+		for(int j = 0; j <= i; ++j)
+			printf("$");
 
-    return 0;
+		putchar('\n');
+	}
+
+	return 0;
 }
