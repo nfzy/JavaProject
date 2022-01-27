@@ -1,4 +1,4 @@
 CFLAGS=-Wall -g
 
 clean:
-	rm -rf ?_? test
+	rm -rf ?_?? test
