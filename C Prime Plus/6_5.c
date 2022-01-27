@@ -18,13 +18,13 @@ int main(void)
 	char ch, i, j;
 	printf("请输入金字塔高度字符:");
 	scanf("%c", &ch);
-	for(i = 65; i <= ch; i++)
+	for(i = 'A'; i <= ch; i++)
 	{
 		for(j = 0; j <= ch - i; j++)
 			printf(" ");
-		for(j = 65; j <= i; j++)
+		for(j = 'A'; j <= i; j++)
 			printf("%c", j);
-		for(j = i - 1; j >= 65; j--)
+		for(j = i - 1; j >= 'A'; j--)
 			printf("%c", j);
 		printf("\n");
 	}
