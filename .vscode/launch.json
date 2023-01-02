@@ -1,0 +1,78 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch array",
+            "request": "launch",
+            "mainClass": "JavaSE.com.example.Base.array",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
+            "name": "Launch guess_num",
+            "request": "launch",
+            "mainClass": "JavaSE.com.example.Base.guess_num",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
+            "name": "Launch random_num",
+            "request": "launch",
+            "mainClass": "JavaSE.com.example.Base.random_num",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
+            "name": "Launch pwd_check",
+            "request": "launch",
+            "mainClass": "JavaSE.com.example.Base.pwd_check",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
+            "name": "Launch loop",
+            "request": "launch",
+            "mainClass": "JavaSE.com.example.Base.loop",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
+            "name": "Launch big_num",
+            "request": "launch",
+            "mainClass": "JavaSE.com.example.Base.big_num",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
+            "name": "Launch data_split",
+            "request": "launch",
+            "mainClass": "JavaSE.com.example.Base.data_split",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
+            "name": "Launch sysmbol",
+            "request": "launch",
+            "mainClass": "JavaSE.com.example.Base.sysmbol",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
+            "name": "Launch convert",
+            "request": "launch",
+            "mainClass": "JavaSE.com.example.Base.convert",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
+            "name": "Launch variable",
+            "request": "launch",
+            "mainClass": "JavaSE.variable",
+            "projectName": "Code_fade30c9"
+        }
+    ]
+}
