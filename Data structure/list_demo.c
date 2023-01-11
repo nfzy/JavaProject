@@ -5,9 +5,8 @@
 
 typedef struct Node
 {
-    int len;
-    int data;
-    int *pNext;
+    int data;   // 数据域
+    struct Node *pNext; // 指针域
 }NODE, *PNODE;
 
 PNODE create_list(void);
@@ -65,9 +64,15 @@ PNODE create_list(void)
     return pHead;
 }
 
-void print_list(PNODE pNode)
+void print_list(PNODE pHead)
 {
-    for(int i = 0; i < pNode -> len; ++i)
-        printf("%d\t", pNode -> data);
+    PNODE p = pHead -> pNext;
+    while(p != NULL)
+    {
+        printf("%d\n", p -> data);
+        p = p -> pNext;
+    }
     putchar('\n');
+
+    return;
 }
