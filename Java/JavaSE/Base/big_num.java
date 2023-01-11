@@ -1,4 +1,4 @@
-package JavaSE.com.example.Base;
+package JavaSE.Base;
 
 public class big_num {
     public static void main(String[] args) {

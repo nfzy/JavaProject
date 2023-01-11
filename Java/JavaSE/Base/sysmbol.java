@@ -1,4 +1,4 @@
-package JavaSE.com.example.Base;
+package JavaSE.Base;
 
 /*
  *  整数之间做运算，结果一定是整数，因为最高类型是整数 

@@ -1,4 +1,4 @@
-package JavaSE.com.example.Base;
+package JavaSE.Base;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -21,5 +21,6 @@ public class guess_num {
             else
                 System.out.print("猜小了！请重新输入：");
         }
+        iScanner.close();
     }
 }

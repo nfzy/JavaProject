@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HelloWorld",
+            "request": "launch",
+            "mainClass": "Java.JavaSE.Base.HelloWorld",
+            "projectName": "Code_fade30c9"
+        },
+        {
+            "type": "java",
             "name": "Launch array",
             "request": "launch",
             "mainClass": "JavaSE.com.example.Base.array",

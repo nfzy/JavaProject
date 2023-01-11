@@ -1,4 +1,4 @@
-package JavaSE.com.example.Base;
+package JavaSE.Base;
 
 import java.util.Random;
 

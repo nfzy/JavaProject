@@ -1,4 +1,4 @@
-package JavaSE.com.example.Base;
+package JavaSE.Base;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -16,7 +16,7 @@ public class array {
         int[] ages = new int[5];
 
         // String[] names = new String[] { "zhouan", "xdd", "zgl" };
-        String[] names = { "zhouan", "xdd", "zgl" };
+        // String[] names = { "zhouan", "xdd", "zgl" };
         // System.out.println(score);
 
         double max = score[0];
