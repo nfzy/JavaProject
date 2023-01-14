@@ -1,4 +1,94 @@
 #include <stdio.h>
+#include <malloc.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+typedef struct Arr
+{
+    int *pBase;
+    int len;
+    int cnt;
+}*PARR;
+
+// 初始化数组,无返回值
+void init_arr(PARR, int);
+// 依次添加元素,返回值为true或false,判断是否添加成功
+bool append_arr(PARR, int);
+// 判断是否为空,返回值为true或false
+bool is_full(PARR);
+
+int main(void)
+{
+    struct Arr arr;
+    int length; // 数组最大长度
+    int value; // 依次添加元素的值
+    PARR pArr = &arr;   // 一定要初始化^_^
+
+    printf("Enter the array length: ");
+    scanf("%d", &length);
+    init_arr(pArr, 5);
+    printf("length: %d, cnt: %d\n", pArr->len, pArr->cnt);
+
+    printf("Enter the array value: ");
+    scanf("%d", &value);
+    append_arr(pArr, value);
+    append_arr(pArr, value);
+    append_arr(pArr, value);
+    append_arr(pArr, value);
+    printf("length: %d, cnt: %d\n", pArr->len, pArr->cnt);
+
+    return 0;
+}
+
+
+// 初始化数组, 总长度为length
+void init_arr(struct Arr *pArr, int length)
+{
+    // 动态分配内存, 要释放free();
+    pArr->pBase = (int *)malloc(sizeof(int) * length);
+    if(NULL == pArr->pBase)
+    {
+        printf("内存空间已满\n");
+        exit(-1);
+    }
+    else 
+    {
+        pArr -> len = length;
+        pArr -> cnt = 0;
+    }
+
+    free(pArr -> pBase);
+    return;
+}
+
+
+// 依次添加元素，返回值true 或 false
+bool append_arr(PARR pArr, int value)
+{
+    if(is_full(pArr))
+    {
+        printf("已经满了，不能在添加\n");
+        return false;
+    }
+    else
+    {
+        pArr -> pBase[pArr -> cnt++] = value;
+        return true;
+    }
+}
+
+// 判断是否满了
+bool is_full(PARR pArr)
+{
+    if(pArr -> cnt == pArr -> len)
+        return true;
+    else 
+        return false;
+}
+
+
+/*
+#include <stdio.h>
 #include "malloc.h"
 #include "stdbool.h"
 #include "stdlib.h"
@@ -149,3 +239,4 @@ void sort_arr(struct Arr *pArr)
             }
     }
 }
+*/
