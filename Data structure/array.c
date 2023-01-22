@@ -25,7 +25,7 @@ int get(struct Arr *pArr, int val);
 int main(void)
 {
     struct Arr arr;
-    init_arr(&arr, 6);
+    init_arr(&arr, 5);
     show_arr(&arr);
     // printf("len = %d\n", arr.len);
     append_arr(&arr, 1);
@@ -33,7 +33,7 @@ int main(void)
     append_arr(&arr, 3);
     append_arr(&arr, 44);
     append_arr(&arr, 999);
-    insert_arr(&arr, 6, -5);
+    insert_arr(&arr, 5, -5);
     show_arr(&arr);
     inversion_arr(&arr);
     show_arr(&arr);
